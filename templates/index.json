@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 55,
+        "image_overlay_opacity": 50,
         "image_height": "large",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
@@ -49,21 +49,21 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Atelier Essentials",
+        "title": "Current Wardrobe",
         "heading_size": "h2",
         "collection": "all",
         "products_to_show": 6,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "color_scheme": "scheme-2",
         "show_view_all": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
+        "columns_mobile": "1",
+        "padding_top": 20,
+        "padding_bottom": 52
       }
     },
     "multicolumn": {
@@ -103,7 +103,7 @@
         "column3"
       ],
       "settings": {
-        "title": "Why Atelier",
+        "title": "Atelier Signatures",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -113,35 +113,55 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 36,
+        "padding_bottom": 60
       }
     },
-    "atelier_editorial": {
-      "type": "atelier-editorial",
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed in London. Built for permanence.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Atelier pieces are created in tightly controlled runs, with premium fabrics and exacting finish standards.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
       "settings": {
-        "color_scheme": "scheme-3",
-        "eyebrow": "Atelier Journal",
-        "heading": "Designed to hold attention without demanding it",
-        "lead": "A study in proportion, texture, and movement. The Atelier point of view balances strong structure with fluid ease.",
-        "image_url_1": "https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?w=1800&auto=format&fit=crop&q=80",
-        "title_1": "Tailored Layers",
-        "copy_1": "Refined wool and cashmere pieces built for repeat wear and effortless styling.",
-        "image_url_2": "https://images.unsplash.com/photo-1651047666890-8eab731ee345?w=1800&auto=format&fit=crop&q=80",
-        "title_2": "Event Dressing",
-        "copy_2": "Silk, drape, and precision finishing for day-to-evening transitions.",
-        "image_url_3": "https://images.unsplash.com/photo-1705909237050-7a7625b47fac?w=1800&auto=format&fit=crop&q=80",
-        "title_3": "Leather Goods",
-        "copy_3": "Structured accessories with tactile materials and clean, timeless geometry."
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
+    "atelier_lookbook": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 64,
+        "custom_liquid": "<section class=\"atelier-lookbook\">\n  <header class=\"atelier-lookbook__header\">\n    <p class=\"atelier-lookbook__eyebrow\">Atelier Journal</p>\n    <h2>Modern couture, reduced to essentials.</h2>\n  </header>\n  <div class=\"atelier-lookbook__grid\">\n    <article class=\"atelier-lookbook__item atelier-lookbook__item--feature\">\n      <img src=\"https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?w=1800&auto=format&fit=crop&q=80\" alt=\"Luxury tailored outerwear editorial\" loading=\"lazy\">\n      <div class=\"atelier-lookbook__meta\">\n        <h3>Tailored Outerwear</h3>\n        <p>Architectural lines in cashmere and wool.</p>\n      </div>\n    </article>\n    <article class=\"atelier-lookbook__item\">\n      <img src=\"https://images.unsplash.com/photo-1651047666890-8eab731ee345?w=1800&auto=format&fit=crop&q=80\" alt=\"Silk dress editorial\" loading=\"lazy\">\n      <div class=\"atelier-lookbook__meta\">\n        <h3>Evening Precision</h3>\n        <p>Fluid silhouettes with deliberate structure.</p>\n      </div>\n    </article>\n    <article class=\"atelier-lookbook__item\">\n      <img src=\"https://images.unsplash.com/photo-1705909237050-7a7625b47fac?w=1800&auto=format&fit=crop&q=80\" alt=\"Luxury leather accessories\" loading=\"lazy\">\n      <div class=\"atelier-lookbook__meta\">\n        <h3>Leather Studio</h3>\n        <p>Accessories shaped for daily ritual.</p>\n      </div>\n    </article>\n  </div>\n</section>"
       }
     }
   },
   "order": [
     "image_banner",
-    "atelier_editorial",
+    "atelier_lookbook",
     "featured_collection",
+    "rich_text",
     "multicolumn"
   ]
 }

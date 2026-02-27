@@ -160,3 +160,246 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* Premium homepage layout */
+.banner {
+  min-height: clamp(56rem, 78vh, 82rem);
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(112deg, rgba(6, 6, 6, 0.62), rgba(6, 6, 6, 0.08)),
+    url('https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?w=2200&auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.banner__media,
+.banner::after {
+  display: none;
+}
+
+.banner__content {
+  z-index: 1;
+}
+
+.banner__heading.h0 {
+  font-size: clamp(5rem, 11vw, 10.8rem);
+  line-height: 0.92;
+  letter-spacing: 0.04em;
+}
+
+.banner__text {
+  max-width: 53rem;
+  font-size: 1.7rem;
+  color: rgba(245, 241, 232, 0.92);
+}
+
+.banner__buttons .button--secondary {
+  border-color: rgba(245, 241, 232, 0.8);
+  color: #f5f1e8;
+  background: rgba(6, 6, 6, 0.16);
+}
+
+.atelier-lookbook {
+  padding-block: 3rem 1rem;
+}
+
+.atelier-lookbook__header {
+  margin-bottom: 2.4rem;
+}
+
+.atelier-lookbook__eyebrow {
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 1.05rem;
+  color: rgba(var(--color-foreground), 0.64);
+}
+
+.atelier-lookbook__header h2 {
+  margin: 0;
+  font-size: clamp(3rem, 6.5vw, 6.4rem);
+  max-width: 62rem;
+}
+
+.atelier-lookbook__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.atelier-lookbook__item {
+  position: relative;
+  overflow: hidden;
+  min-height: 44rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.24);
+}
+
+.atelier-lookbook__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 620ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.atelier-lookbook__item:hover img {
+  transform: scale(1.06);
+}
+
+.atelier-lookbook__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.08) 30%, rgba(8, 8, 8, 0.74) 100%);
+}
+
+.atelier-lookbook__meta {
+  position: absolute;
+  z-index: 1;
+  left: 1.8rem;
+  right: 1.8rem;
+  bottom: 1.8rem;
+  color: #f4eee4;
+}
+
+.atelier-lookbook__meta h3 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+}
+
+.atelier-lookbook__meta p {
+  margin: 0;
+  font-size: 1.35rem;
+  color: rgba(244, 238, 228, 0.9);
+}
+
+.atelier-lookbook__item--feature {
+  min-height: 56rem;
+}
+
+.featured-collection .title {
+  font-size: clamp(2.6rem, 4.2vw, 5rem);
+}
+
+@media screen and (max-width: 989px) {
+  .atelier-lookbook__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .atelier-lookbook__item,
+  .atelier-lookbook__item--feature {
+    min-height: 36rem;
+  }
+
+  .banner__heading.h0 {
+    font-size: clamp(4.2rem, 14vw, 6.8rem);
+  }
+}
+
+/* Positioning refinements */
+.banner {
+  position: relative;
+}
+
+.banner__content {
+  padding-top: clamp(6rem, 10vh, 11rem);
+  padding-bottom: clamp(5rem, 9vh, 10rem);
+}
+
+.banner__box {
+  max-width: 62rem;
+  margin-right: auto;
+  padding: 3.2rem clamp(2rem, 3vw, 3.8rem);
+}
+
+.banner__buttons {
+  margin-top: 2.2rem;
+}
+
+.atelier-lookbook {
+  max-width: 132rem;
+  margin: 0 auto;
+}
+
+.atelier-lookbook__grid {
+  align-items: stretch;
+  grid-template-columns: 1.35fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.atelier-lookbook__item {
+  min-height: 42rem;
+}
+
+.atelier-lookbook__item--feature {
+  min-height: 54rem;
+}
+
+.atelier-lookbook__meta {
+  left: 2.2rem;
+  right: 2.2rem;
+  bottom: 2rem;
+}
+
+.rich-text__wrapper {
+  max-width: 94rem;
+}
+
+.multicolumn .title,
+.featured-collection .title {
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (max-width: 989px) {
+  .banner__content {
+    padding-top: 6.2rem;
+    padding-bottom: 5rem;
+  }
+
+  .banner__box {
+    max-width: 100%;
+  }
+
+  .atelier-lookbook__header {
+    margin-bottom: 1.8rem;
+  }
+
+  .atelier-lookbook__grid {
+    gap: 1.2rem;
+  }
+
+  .atelier-lookbook__item,
+  .atelier-lookbook__item--feature {
+    min-height: 34rem;
+  }
+}
+
+/* Featured collection card alignment cleanup */
+.featured-collection .grid {
+  align-items: start;
+}
+
+.featured-collection .card-wrapper {
+  height: auto;
+}
+
+.featured-collection .card,
+.featured-collection .card__content,
+.featured-collection .card__information {
+  height: auto;
+}
+
+.featured-collection .card__inner {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+.featured-collection .card__information {
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
+}
