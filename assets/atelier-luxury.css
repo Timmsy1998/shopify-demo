@@ -564,14 +564,15 @@ body {
   object-fit: cover;
   object-position: center 24%;
   z-index: 0;
+  filter: brightness(0.82) contrast(1.02) saturate(0.98);
 }
 
 .atelier-hero-video__overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(105deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.58) 52%, rgba(0, 0, 0, 0.68));
-  opacity: 0.9;
+  background: linear-gradient(105deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.2) 52%, rgba(0, 0, 0, 0.3));
+  opacity: 0.56;
 }
 
 .atelier-hero-video__content {
