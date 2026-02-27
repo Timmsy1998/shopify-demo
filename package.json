@@ -5,11 +5,11 @@
   "description": "Custom Shopify theme for Atelier",
   "scripts": {
     "shopify": "npx @shopify/cli@latest",
-    "dev": "dotenv -e .env -- npm run shopify -- theme dev --store=$SHOPIFY_STORE --theme-editor-sync",
-    "pull": "dotenv -e .env -- npm run shopify -- theme pull --store=$SHOPIFY_STORE --theme=$SHOPIFY_THEME_ID",
-    "push": "dotenv -e .env -- npm run shopify -- theme push --store=$SHOPIFY_STORE --theme=$SHOPIFY_THEME_ID",
+    "dev": "dotenv -e .env -- sh -c 'npm run shopify -- theme dev --store=\"$SHOPIFY_STORE\" --theme-editor-sync'",
+    "pull": "dotenv -e .env -- sh -c 'npm run shopify -- theme pull --store=\"$SHOPIFY_STORE\" --theme=\"$SHOPIFY_THEME_ID\"'",
+    "push": "dotenv -e .env -- sh -c 'npm run shopify -- theme push --store=\"$SHOPIFY_STORE\" --theme=\"$SHOPIFY_THEME_ID\"'",
     "check": "npm run shopify -- theme check",
-    "list": "dotenv -e .env -- npm run shopify -- theme list --store=$SHOPIFY_STORE"
+    "list": "dotenv -e .env -- sh -c 'npm run shopify -- theme list --store=\"$SHOPIFY_STORE\"'"
   },
   "devDependencies": {
     "dotenv-cli": "^8.0.0"
