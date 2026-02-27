@@ -164,12 +164,32 @@
         "padding_bottom": 64,
         "custom_liquid": "<section class=\"atelier-lookbook\">\n  <header class=\"atelier-lookbook__header\">\n    <p class=\"atelier-lookbook__eyebrow\">Atelier Journal</p>\n    <h2>Modern couture, reduced to essentials.</h2>\n  </header>\n  <div class=\"atelier-lookbook__grid\">\n    <article class=\"atelier-lookbook__item atelier-lookbook__item--feature\">\n      <img src=\"https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?w=1800&auto=format&fit=crop&q=80\" alt=\"Luxury tailored outerwear editorial\" loading=\"lazy\">\n      <div class=\"atelier-lookbook__meta\">\n        <h3>Tailored Outerwear</h3>\n        <p>Architectural lines in cashmere and wool.</p>\n      </div>\n    </article>\n    <article class=\"atelier-lookbook__item\">\n      <img src=\"https://images.unsplash.com/photo-1651047666890-8eab731ee345?w=1800&auto=format&fit=crop&q=80\" alt=\"Silk dress editorial\" loading=\"lazy\">\n      <div class=\"atelier-lookbook__meta\">\n        <h3>Evening Precision</h3>\n        <p>Fluid silhouettes with deliberate structure.</p>\n      </div>\n    </article>\n    <article class=\"atelier-lookbook__item\">\n      <img src=\"https://images.unsplash.com/photo-1705909237050-7a7625b47fac?w=1800&auto=format&fit=crop&q=80\" alt=\"Luxury leather accessories\" loading=\"lazy\">\n      <div class=\"atelier-lookbook__meta\">\n        <h3>Leather Studio</h3>\n        <p>Accessories shaped for daily ritual.</p>\n      </div>\n    </article>\n  </div>\n</section>"
       }
+    },
+    "atelier_manifesto": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom_liquid": "<section class=\"atelier-manifesto\" aria-label=\"Atelier design principles\">\n  <div class=\"atelier-manifesto__track\" role=\"presentation\">\n    <span>Quiet Luxury</span><span>•</span><span>London Design</span><span>•</span><span>Small-Batch Craft</span><span>•</span><span>Precision Tailoring</span><span>•</span><span>Natural Fibres</span><span>•</span><span>Quiet Luxury</span><span>•</span><span>London Design</span><span>•</span><span>Small-Batch Craft</span><span>•</span><span>Precision Tailoring</span><span>•</span><span>Natural Fibres</span>\n  </div>\n</section>"
+      }
+    },
+    "atelier_concierge": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "padding_top": 52,
+        "padding_bottom": 60,
+        "custom_liquid": "<section class=\"atelier-concierge\">\n  <div class=\"atelier-concierge__panel\">\n    <div class=\"atelier-concierge__media\">\n      <img src=\"https://images.unsplash.com/photo-1589363358751-ab05797e5629?w=1800&auto=format&fit=crop&q=80\" alt=\"Luxury atelier consultation\" loading=\"lazy\">\n    </div>\n    <div class=\"atelier-concierge__content\">\n      <p class=\"atelier-concierge__eyebrow\">Atelier Concierge</p>\n      <h2>Private wardrobe guidance, tailored to your lifestyle.</h2>\n      <p>Book a one-to-one styling consultation for fit recommendations, capsule edits, and priority access to limited drops.</p>\n      <div class=\"atelier-concierge__metrics\">\n        <div><strong>48h</strong><span>Response Window</span></div>\n        <div><strong>1:1</strong><span>Styling Support</span></div>\n        <div><strong>14d</strong><span>Fit Follow-up</span></div>\n      </div>\n      <a class=\"button button--secondary\" href=\"/pages/contact\">Request Concierge</a>\n    </div>\n  </div>\n</section>"
+      }
     }
   },
   "order": [
     "image_banner",
+    "atelier_manifesto",
     "atelier_lookbook",
     "featured_collection",
+    "atelier_concierge",
     "rich_text",
     "multicolumn"
   ]

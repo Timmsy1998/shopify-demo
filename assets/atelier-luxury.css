@@ -420,3 +420,127 @@ body {
   align-items: baseline;
   gap: 0.8rem;
 }
+
+/* Unique custom elements */
+.atelier-manifesto {
+  overflow: hidden;
+  border-block: 1px solid rgba(229, 219, 202, 0.2);
+}
+
+.atelier-manifesto__track {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 1.18rem;
+  padding-block: 0.6rem;
+  animation: atelierMarquee 26s linear infinite;
+}
+
+.atelier-manifesto__track span:nth-child(even) {
+  color: rgba(229, 219, 202, 0.62);
+}
+
+@keyframes atelierMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.atelier-concierge {
+  position: relative;
+}
+
+.atelier-concierge__panel {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  border: 1px solid rgba(245, 241, 232, 0.2);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 2.2rem 4.6rem rgba(0, 0, 0, 0.2);
+}
+
+.atelier-concierge__media {
+  min-height: 52rem;
+}
+
+.atelier-concierge__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atelier-concierge__content {
+  padding: clamp(2.2rem, 4vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.atelier-concierge__eyebrow {
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1.05rem;
+  color: rgba(245, 241, 232, 0.72);
+}
+
+.atelier-concierge__content h2 {
+  margin: 0;
+  font-size: clamp(3.2rem, 4.8vw, 5.8rem);
+  line-height: 0.98;
+}
+
+.atelier-concierge__content p {
+  margin: 1.4rem 0 0;
+  color: rgba(245, 241, 232, 0.85);
+  font-size: 1.58rem;
+}
+
+.atelier-concierge__metrics {
+  margin: 2rem 0 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.atelier-concierge__metrics div {
+  border: 1px solid rgba(245, 241, 232, 0.2);
+  border-radius: 0.8rem;
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+
+.atelier-concierge__metrics strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.8rem;
+  line-height: 0.95;
+}
+
+.atelier-concierge__metrics span {
+  display: block;
+  margin-top: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.98rem;
+}
+
+.atelier-concierge .button {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 989px) {
+  .atelier-concierge__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .atelier-concierge__media {
+    min-height: 30rem;
+  }
+
+  .atelier-concierge__metrics {
+    grid-template-columns: 1fr;
+  }
+}
