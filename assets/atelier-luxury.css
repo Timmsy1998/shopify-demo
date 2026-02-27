@@ -271,12 +271,15 @@ body {
 .atelier-lookbook__meta h3 {
   margin: 0 0 0.4rem;
   font-size: clamp(2rem, 3vw, 3.4rem);
+  color: #f4eee4;
+  text-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.55);
 }
 
 .atelier-lookbook__meta p {
   margin: 0;
   font-size: 1.35rem;
   color: rgba(244, 238, 228, 0.9);
+  text-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.45);
 }
 
 .atelier-lookbook__item--feature {
