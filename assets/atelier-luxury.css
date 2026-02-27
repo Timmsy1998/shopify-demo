@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --atelier-paper: #f3efe8;
+  --atelier-ink: #111111;
+  --atelier-gold: #b99864;
+  --atelier-stone: #d9d0c4;
+  --atelier-charcoal: #151618;
+}
+
+body,
+.text-body,
+.rte,
+button,
+input,
+select,
+textarea {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.banner__heading,
+.title,
+.card__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+
+body {
+  background: radial-gradient(circle at 12% 12%, rgba(185, 152, 100, 0.11), transparent 42%),
+    radial-gradient(circle at 90% 10%, rgba(17, 17, 17, 0.08), transparent 28%),
+    linear-gradient(180deg, #f7f4ee 0%, #f3efe8 48%, #efebe4 100%);
+}
+
+.header-wrapper {
+  backdrop-filter: blur(8px);
+  background: rgba(243, 239, 232, 0.9);
+}
+
+.announcement-bar {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.banner__box {
+  border: 1px solid rgba(185, 152, 100, 0.38);
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.16);
+}
+
+.button,
+.button--secondary {
+  border-radius: 999px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: transform 180ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.button:hover,
+.button--secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.9rem 2.6rem rgba(0, 0, 0, 0.22);
+}
+
+.card-wrapper .card,
+.article-card-wrapper .card,
+.collection-card-wrapper .card {
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 0.8rem 2.2rem rgba(8, 8, 8, 0.08);
+}
+
+.card__information,
+.product__info-container {
+  letter-spacing: 0.01em;
+}
+
+.section-header .menu__list-item,
+.header__menu-item,
+.footer-block__heading {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.multicolumn-card,
+.collage-card,
+.content-container {
+  border: 1px solid rgba(185, 152, 100, 0.22);
+}
+
+@media screen and (max-width: 749px) {
+  .banner__heading.h0 {
+    font-size: 4.2rem;
+  }
+}
