@@ -9,52 +9,6 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "ATELIER LONDON",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Quiet luxury for a modern wardrobe. Limited runs, precise tailoring, exceptional materials.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Explore Collection",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 50,
-        "image_height": "large",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-4",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -182,10 +136,19 @@
         "padding_bottom": 60,
         "custom_liquid": "<section class=\"atelier-concierge\">\n  <div class=\"atelier-concierge__panel\">\n    <div class=\"atelier-concierge__media\">\n      <img src=\"https://images.unsplash.com/photo-1589363358751-ab05797e5629?w=1800&auto=format&fit=crop&q=80\" alt=\"Luxury atelier consultation\" loading=\"lazy\">\n    </div>\n    <div class=\"atelier-concierge__content\">\n      <p class=\"atelier-concierge__eyebrow\">Atelier Concierge</p>\n      <h2>Private wardrobe guidance, tailored to your lifestyle.</h2>\n      <p>Book a one-to-one styling consultation for fit recommendations, capsule edits, and priority access to limited drops.</p>\n      <div class=\"atelier-concierge__metrics\">\n        <div><strong>48h</strong><span>Response Window</span></div>\n        <div><strong>1:1</strong><span>Styling Support</span></div>\n        <div><strong>14d</strong><span>Fit Follow-up</span></div>\n      </div>\n      <a class=\"button button--secondary\" href=\"/pages/contact\">Request Concierge</a>\n    </div>\n  </div>\n</section>"
       }
+    },
+    "atelier_hero_video": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_liquid": "<section class=\"atelier-hero-video\">\n  <video class=\"atelier-hero-video__media\" autoplay muted loop playsinline preload=\"metadata\" poster=\"https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?w=2200&auto=format&fit=crop&q=80\">\n    <source src=\"https://www.pexels.com/download/video/8893566/\" type=\"video/mp4\">\n      Your browser does not support HTML5 video.\n  </video>\n  <div class=\"atelier-hero-video__overlay\"></div>\n  <div class=\"atelier-hero-video__content page-width\">\n    <p class=\"atelier-hero-video__eyebrow\">Atelier London</p>\n    <h1>ATELIER LONDON</h1>\n    <p>Quiet luxury for a modern wardrobe. Limited runs, precise tailoring, exceptional materials.</p>\n    <a class=\"button button--secondary\" href=\"/collections/all\">Explore Collection</a>\n  </div>\n</section>"
+      }
     }
   },
   "order": [
-    "image_banner",
+    "atelier_hero_video",
     "atelier_manifesto",
     "atelier_lookbook",
     "featured_collection",
