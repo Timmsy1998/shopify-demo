@@ -6,21 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "ATELIER",
+            "heading": "ATELIER LONDON",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Luxury fashion essentials designed in London and crafted in small runs.",
+            "text": "Quiet luxury for a modern wardrobe. Limited runs, precise tailoring, exceptional materials.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop new arrivals",
+            "button_label_1": "Explore Collection",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -35,113 +35,34 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 55,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Modern tailoring. Quiet confidence.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Atelier blends refined cuts, premium fabrics, and seasonless wardrobe pieces made to be worn for years.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "New arrivals",
+        "title": "Atelier Essentials",
         "heading_size": "h2",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 6,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "The Atelier wardrobe",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -192,19 +113,35 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "atelier_editorial": {
+      "type": "atelier-editorial",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "eyebrow": "Atelier Journal",
+        "heading": "Designed to hold attention without demanding it",
+        "lead": "A study in proportion, texture, and movement. The Atelier point of view balances strong structure with fluid ease.",
+        "image_url_1": "https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?w=1800&auto=format&fit=crop&q=80",
+        "title_1": "Tailored Layers",
+        "copy_1": "Refined wool and cashmere pieces built for repeat wear and effortless styling.",
+        "image_url_2": "https://images.unsplash.com/photo-1651047666890-8eab731ee345?w=1800&auto=format&fit=crop&q=80",
+        "title_2": "Event Dressing",
+        "copy_2": "Silk, drape, and precision finishing for day-to-evening transitions.",
+        "image_url_3": "https://images.unsplash.com/photo-1705909237050-7a7625b47fac?w=1800&auto=format&fit=crop&q=80",
+        "title_3": "Leather Goods",
+        "copy_3": "Structured accessories with tactile materials and clean, timeless geometry."
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
+    "atelier_editorial",
     "featured_collection",
-    "collage",
-    "video",
     "multicolumn"
   ]
 }

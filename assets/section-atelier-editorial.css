@@ -1,0 +1,119 @@
+.atelier-editorial {
+  padding: 7rem 0;
+}
+
+.atelier-editorial__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.atelier-editorial__eyebrow {
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: rgba(var(--color-foreground), 0.7);
+}
+
+.atelier-editorial__heading {
+  margin: 0;
+  max-width: 62rem;
+  font-size: clamp(3rem, 5.1vw, 6rem);
+}
+
+.atelier-editorial__lead {
+  max-width: 40rem;
+  margin: 0;
+  color: rgba(var(--color-foreground), 0.8);
+}
+
+.atelier-editorial__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+.atelier-editorial__card {
+  position: relative;
+  overflow: hidden;
+  min-height: 46rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1.4rem 3.6rem rgba(0, 0, 0, 0.22);
+  transform: translateZ(0);
+}
+
+.atelier-editorial__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.04) 25%, rgba(8, 8, 8, 0.72) 100%);
+  z-index: 1;
+}
+
+.atelier-editorial__media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  transition: transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.atelier-editorial__card:hover .atelier-editorial__media {
+  transform: scale(1.08);
+}
+
+.atelier-editorial__content {
+  position: absolute;
+  z-index: 2;
+  left: 2.2rem;
+  right: 2.2rem;
+  bottom: 2.2rem;
+  color: #f5f1e8;
+}
+
+.atelier-editorial__title {
+  margin: 0 0 0.7rem;
+  font-size: clamp(2.2rem, 2.8vw, 3.6rem);
+  color: inherit;
+}
+
+.atelier-editorial__copy {
+  margin: 0;
+  font-size: 1.4rem;
+  color: rgba(245, 241, 232, 0.9);
+}
+
+.atelier-editorial__card--feature {
+  grid-column: span 7;
+}
+
+.atelier-editorial__card--side {
+  grid-column: span 5;
+}
+
+.atelier-editorial__card--tall {
+  min-height: 58rem;
+}
+
+@media screen and (max-width: 989px) {
+  .atelier-editorial__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .atelier-editorial__card--feature,
+  .atelier-editorial__card--side {
+    grid-column: span 12;
+  }
+
+  .atelier-editorial__card,
+  .atelier-editorial__card--tall {
+    min-height: 40rem;
+  }
+}
